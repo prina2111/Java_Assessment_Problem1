@@ -16,8 +16,8 @@ public static int computePointOfInterception(int x, int y) {
 	            return x;
 	        } 
 	        
-	        x = (x+2)%12;
-	        y = (y+1)%12;
+	        x = ( x == 11 || x == 12 ) ? ( x+2 ) % 12 : x + 2;
+	        y = y == 12 ? ( y+1 ) % 12 : y + 1;
 
 	    }
 
