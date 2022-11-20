@@ -2,8 +2,9 @@ import java.util.*;
 public class TwoPoints {
 
 public static void main(String[] args) {
-	System.out.println("The point at which x and y meet is: " + computePointOfInterception(2, 4));
-	System.out.println("The point at which x and y meet is: " + computePointOfInterception(11, 7));
+	int x = 11;
+	int y = 7;
+	System.out.println("The point at which node " + x + " and node " + y + " meet is point " + computePointOfInterception(x, y));
 }
 
 public static int computePointOfInterception(int x, int y) {
